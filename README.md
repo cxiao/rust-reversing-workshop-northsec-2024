@@ -7,14 +7,16 @@ During the presentation, we will be building and reversing a very simple Rust bi
 You will need the following:
 
 1) A machine that can build a Rust binary. We'll be pulling dependencies to build the binary, so that machine should have internet access.
-2) A machine that can run the Rust binary you built. We'll be building a benign downloader in this workshop, so that machine should ideally also have internet access. 
+    - For instructions on how to set up the Rust toolchain for building your binary, see the _Installing the Rust Toolchain_ section below.
+2) A machine that can run the Rust binary you built. We'll be building a benign downloader in this workshop, so that machine should ideally also have internet access.
+    - The [provided source code](https://github.com/cxiao/rust-reversing-workshop-northsec-2024/blob/main/simple-downloader/src/main.rs) downloads and runs a shell script for macOS / Linux systems (`https://sh.rustup.rs/rustup-init.sh`); however, the code is very easily adaptable for Windows as well.
 3) Your preferred reverse engineering tool, for reversing the Rust binary you built!
+    - A Ghidra project with some prebuilt Linux versions of the `simple-downloader` binary is provided here: [prebuilt-files/rust-reversing-workshop-2024_2024_05_17.gar](https://github.com/cxiao/rust-reversing-workshop-northsec-2024/blob/main/prebuilt-files/rust-reversing-workshop-2024_2024_05_17.gar)
+    - The prebuilt Linux `simple-downloader` binaries in the Ghidra project are also available separately:
+        - [`simple-downloader-release-build-stripped`](https://github.com/cxiao/rust-reversing-workshop-northsec-2024/blob/main/prebuilt-files/simple-downloader-release-build-stripped)
+        - [`simple-downloader-release-build-unstripped`](https://github.com/cxiao/rust-reversing-workshop-northsec-2024/blob/main/prebuilt-files/simple-downloader-release-build-unstripped)
 
-## Manual Setup
-
-If you would like to do this entirely from the comfort of your own existing machine, you can use the manual instructions below!
-
-### Installing the Rust Toolchain
+## Installing the Rust Toolchain
 
 The official toolchain setup instructions are at https://rustup.rs/. Follow the instructions there; the page will display specific instructions for your operating system.
 
