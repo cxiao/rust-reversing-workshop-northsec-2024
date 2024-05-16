@@ -4,7 +4,25 @@ This repository contains the supplementary files for the [_Reversing Rust Binari
 
 During the presentation, we will be building and reversing a very simple Rust binary - a benign downloader. The source code for the downloader is inside this repository, in the `simple-downloader/` folder.
 
-You will need the following:
+Read below for the pre-workshop setup instructions!
+
+## Automatic setup: Pre-configured Ubuntu VM
+
+For easy setup, you can download a preconfigured Ubuntu VM which has all of the following:
+
+- The Rust toolchain (Rust version 1.77.1)
+- Visual Studio Code, with the [`rust-analyzer` extension](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) preinstalled (for autocomplete and documentation tooltips)
+- The code in the `simple-downloader/` folder of this repository
+- Ghidra (version 11.0.3)
+- A Ghidra project with prebuilt Linux versions of the `simple-downloader` binary
+
+You can download the VM file (a .OVA file) here: https://drive.google.com/file/d/1pM1MwQf4Ccjt-KokbV1RFh8C9tv48jrt/view?usp=sharing
+
+You can then import this OVA file into your VM software (e.g. VMware Workstation, VMWare Fusion, VirtualBox, etc.)
+
+## Manual setup
+
+If you would like to do this workshop from the comfort of your own machine, you will need the following:
 
 1) A machine that can build a Rust binary. We'll be pulling dependencies to build the binary, so that machine should have internet access.
     - For instructions on how to set up the Rust toolchain for building your binary, see the _Installing the Rust Toolchain_ section below.
@@ -16,7 +34,7 @@ You will need the following:
         - [`simple-downloader-release-build-stripped`](https://github.com/cxiao/rust-reversing-workshop-northsec-2024/blob/main/prebuilt-files/simple-downloader-release-build-stripped)
         - [`simple-downloader-release-build-unstripped`](https://github.com/cxiao/rust-reversing-workshop-northsec-2024/blob/main/prebuilt-files/simple-downloader-release-build-unstripped)
 
-## Installing the Rust Toolchain
+### Installing the Rust Toolchain
 
 The official toolchain setup instructions are at https://rustup.rs/. Follow the instructions there; the page will display specific instructions for your operating system.
 
@@ -41,7 +59,7 @@ rustup install 1.77.1
 rustup default 1.77.1
 ```
 
-### Linux users: Ensure you have build tools
+#### Linux users: Ensure you have build tools
 
 If you're building on Windows or macOS, you can skip this step.
 
