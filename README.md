@@ -1,6 +1,10 @@
 # Reversing Rust Binaries: One step beyond strings - NorthSec 2024 Workshop
 
-This repository contains the supplementary files for the [_Reversing Rust Binaries: One step beyond strings_ workshop at NorthSec 2024](https://nsec.io/session/2024-reversing-rust-binaries-one-step-beyond-strings.html).
+This repository contains the supplementary files for the [_Reversing Rust Binaries: One step beyond strings_ workshop at NorthSec 2024](https://nsec.io/session/2024-reversing-rust-binaries-one-step-beyond-strings.html), presented on May 17, 2024.
+
+- The slides for this workshop are in the [slides/ directory of this repository](https://github.com/cxiao/rust-reversing-workshop-northsec-2024/tree/main/slides).
+
+- A recording of the livestream for this workshop is available on YouTube: [NorthSec 2024 - Workshop 1 - Day 2](https://www.youtube.com/watch?v=VH7ID5S7_pI)
 
 During the presentation, we will be building and reversing a very simple Rust binary - a benign downloader. The source code for the downloader is inside this repository, in the `simple-downloader/` folder.
 
